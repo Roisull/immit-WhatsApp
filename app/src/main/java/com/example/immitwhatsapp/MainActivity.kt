@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         viewPageAdapter = ViewPageAdapter(supportFragmentManager, lifecycle)
 
         with(binding){
-            viewPager.adapter = viewPageAdapter
+            viewPagerr.adapter = viewPageAdapter
 
-            TabLayoutMediator(tabLayout, viewPager){ tab, position ->
+            TabLayoutMediator(tabLayout, viewPagerr){ tab, position ->
                 when(position){
                     0 -> tab.text = "Chat"
                     1 -> tab.text = "Status"
