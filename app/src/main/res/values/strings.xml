@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">immit WhatsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_chat" />
+    <string name="fragment_call">fragment_call</string>
+    <string name="fragment_status" />
 </resources>
