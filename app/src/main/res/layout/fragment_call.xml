@@ -1,15 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CallFragment">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="@string/fragment_call" />
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameCall"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/pp"
+            android:src="@drawable/ic_call_made_green" />
+
+        <TextView
+            android:id="@+id/txtFriendNameCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp"
+            android:text="Lana"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDateCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameCall"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/arrow"
+            android:text="Hari ini"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameCall"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/txtDateCall"
+            android:text="10.30"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_call_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/wa"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24" />
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameCall2"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/pp2"
+            android:src="@drawable/ic_call_received_red" />
+
+        <TextView
+            android:id="@+id/txtFriendNameCall2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp2"
+            android:text="Rois"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDateCall2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameCall2"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/arrow2"
+            android:text="Kemarin"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameCall2"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/txtDateCall2"
+            android:text="16.36"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_call_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/wa"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

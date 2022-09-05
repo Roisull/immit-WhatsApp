@@ -1,16 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ChatFragment">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="@string/fragment_chat" />
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
 
-</FrameLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/pp1"
+            android:src="@drawable/ic_double_check_blue"
+            android:layout_marginRight="6dp"/>
+
+        <TextView
+            android:id="@+id/txtFriendNameChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp1"
+            android:text="Rois"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFriendTextChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/check"
+            android:text="Okeii is"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:text="06.00"
+            android:textColor="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey"
+            android:layout_below="@id/txtFriendTextChat"
+            android:layout_toRightOf="@id/pp1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_woman_24" />
+
+        <ImageView
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat2"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/pp2"
+            android:src="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/txtFriendNameChat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp2"
+            android:text="Qisthi"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFriendTextChat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat2"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/check2"
+            android:text="Iyaa qis"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:text="Kemarin"
+            android:textColor="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey"
+            android:layout_below="@id/txtFriendTextChat2"
+            android:layout_toRightOf="@id/pp2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24" />
+
+        <ImageView
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat3"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/pp3"
+            android:src="@drawable/ic_double_check_grey" />
+
+        <TextView
+            android:id="@+id/txtFriendNameChat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp3"
+            android:text="Lana"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFriendTextChat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat3"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/check3"
+            android:text="Mantap lana"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:text="Kemarin"
+            android:textColor="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey"
+            android:layout_below="@id/txtFriendTextChat3"
+            android:layout_toRightOf="@id/pp3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24" />
+
+        <ImageView
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat4"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/pp4" />
+
+        <TextView
+            android:id="@+id/txtFriendNameChat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp4"
+            android:text="Danial"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFriendTextChat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameChat4"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/check4"
+            android:text="Yoii"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:text="Kemarin"
+            android:textColor="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey"
+            android:layout_below="@id/txtFriendTextChat4"
+            android:layout_toRightOf="@id/pp4"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,16 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".StatusFragment">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:text="@string/fragment_status" />
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
 
-</FrameLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp1"
+            app:civ_border_color="@color/tab_color"
+            app:civ_border_width="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24" />
+
+        <TextView
+            android:id="@+id/txtFriendNameStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp1"
+            android:text="Rois"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDateStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameStatus"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/pp1"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameStatus"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/txtDateStatus"
+            android:text="10 menit yang lalu"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_man_24"
+            app:civ_border_color="@color/tab_color"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/txtFriendNameStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp2"
+            android:text="Lana"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDateStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameStatus2"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/pp2"
+            android:text="Hari ini"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameStatus2"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/txtDateStatus2"
+            android:text="10.30"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_baseline_person_woman_24"
+            app:civ_border_color="@color/tab_color"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/txtFriendNameStatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pp3"
+            android:text="Qisthi"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDateStatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameStatus3"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/pp3"
+            android:text="Kemarin"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFriendNameStatus3"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/txtDateStatus3"
+            android:text="13.59"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

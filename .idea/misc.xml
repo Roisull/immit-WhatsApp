@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/A/AndroidStudioProjects/immit-WhatsApp/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.1135" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/immit-WhatsApp/app/src/main/res/drawable/ic_check.xml" value="0.1135" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/immit-WhatsApp/app/src/main/res/layout/activity_main.xml" value="0.13272543059777103" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/immit-WhatsApp/app/src/main/res/layout/fragment_call.xml" value="0.25" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/immit-WhatsApp/app/src/main/res/layout/fragment_chat.xml" value="0.22" />
+        <entry key="..\:/Users/A/AndroidStudioProjects/immit-WhatsApp/app/src/main/res/layout/fragment_status.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1693840579710145" />
         <entry key="app/src/main/res/layout/fragment_call.xml" value="0.1693840579710145" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.1693840579710145" />
